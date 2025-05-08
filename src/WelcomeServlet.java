@@ -17,8 +17,8 @@ public class WelcomeServlet extends HttpServlet {
        
 protected void doPost (HttpServletRequest request,HttpServletResponse response) throws
 ServletException,IOException {
-	request.setCharacterEncoding("UFT-8");
-	response.setContentType("text/html; charset=UFT-8");
+	request.setCharacterEncoding("UTF-8");
+	response.setContentType("text/html; charset=UTF-8");
 	String username = request.getParameter("username");
 	
 	System.out.println(username);
