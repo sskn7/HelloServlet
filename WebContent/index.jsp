@@ -11,7 +11,7 @@
 <input type="button" value="WelcomeServlet" onClick="location.href='welcome.jsp'">
 <input type="button" value="問い合わせ" onclick="location.href='inquiry.jsp'">
 
-//get通信
+GET通信
 <form method="get" action="TestServlet">
   <input type="text" name="username">
   <input type="password" name="password">
@@ -19,7 +19,7 @@
 </form>
 
   
-//post送信
+POST送信
 <form method="post" action="TestServlet">
   <input type="text" name="username">
   <input type="password" name="password">
