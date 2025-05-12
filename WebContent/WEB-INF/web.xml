@@ -28,7 +28,6 @@
     <servlet-name>Inquiry</servlet-name>
     <url-pattern>/HelloServlet/InquiryServlet</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <servlet-name>Test</servlet-name>
     <servlet-class>TestServlet</servlet-class>
@@ -37,6 +36,4 @@
     <servlet-name>Test</servlet-name>
     <url-pattern>/HelloServlet/TestServlet</url-pattern>
   </servlet-mapping>
-  
-  
 </web-app>
