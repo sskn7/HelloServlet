@@ -1,5 +1,3 @@
-
-
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -26,11 +24,12 @@ public class MySQLServlet extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html; charset=UTF-8");
 
+
 		PrintWriter out = response.getWriter();
 
 		out.println("<html>");
 		out.println("<head>");
-		out.println("<title>データベーステキスト</title>");
+		out.println("<title>データベーステスト</title>");
 		out.println("</head>");
 		out.println("<body>");
 
@@ -52,7 +51,7 @@ public class MySQLServlet extends HttpServlet {
 				String userName = rs.getString("user_name");
 				String userPassword = rs.getString("password");
 				out.println("<p>");
-				out.println("ユーザーID"+userId+",ユーザー名"+userName+",パスワード"+userPassword);
+				out.println("ユーザーID:"+userId+",ユーザー名:"+userName+",パスワード:"+userPassword);
 				out.println("</p>");
 			}
 
@@ -70,11 +69,12 @@ public class MySQLServlet extends HttpServlet {
 					conn.close();
 				}
 	} catch (SQLException e) {
-		out.println("SQLExeption:" + e.getMessage());
+		out.println("SQLException:" + e.getMessage());
 	   }
 	}
 		out.println("</body>");
 		out.println("</html>");
 	}
-
 }
+
+
